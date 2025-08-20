@@ -52,13 +52,6 @@
       "dest": "/app.js"
     }
   ],
-  "functions": {
-    "app.js": {
-      "maxDuration": 30,
-      "memory": 1024,
-      "regions": ["sfo1", "sin1", "hnd1"]
-    }
-  },
   "env": {
     "NODE_ENV": "production",
     "VERCEL": "1"
