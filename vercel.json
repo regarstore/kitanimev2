@@ -22,36 +22,6 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/stream",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/proxy",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/admin/(.*)",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/anime/(.*)",
-      "dest": "/app.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/app.js"
-    }
-  ],
   "env": {
     "NODE_ENV": "production",
     "VERCEL": "1"
@@ -102,6 +72,34 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/public/(.*)",
+      "destination": "/public/$1"
+    },
+    {
+      "source": "/stream",
+      "destination": "/app.js"
+    },
+    {
+      "source": "/proxy",
+      "destination": "/app.js"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/app.js"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/app.js"
+    },
+    {
+      "source": "/anime/(.*)",
+      "destination": "/app.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/app.js"
+    },
     {
       "source": "/robots.txt",
       "destination": "/api/robots"
